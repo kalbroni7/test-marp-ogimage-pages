@@ -1,6 +1,9 @@
 {
   "name": "node",
-  "image": "ghcr.io/hankei6km/h6-dev-containers:node",
+  "build": {
+    "context": ".",
+    "dockerfile": "Dockerfile"
+  },
   "runArgs": ["--init", "--privileged"],
   "overrideCommand": false,
 
@@ -23,6 +26,9 @@
   "extensions": ["esbenp.prettier-vscode"],
   "settings": {
     "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
       "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[json]": {
