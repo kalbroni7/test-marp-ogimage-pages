@@ -5,18 +5,23 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "export": "next build && next export",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "ogimage": "marp --html --output public/ogimages --input-dir md/ --image png --theme-set ./.devcontainer/ogimage/themes/",
+    "ogimage:devcontainer": "bash scripts/ogimage-devcontainer.sh"
   },
   "dependencies": {
-    "@types/node": "18.11.9",
-    "@types/react": "18.0.25",
+    "@marp-team/marp-cli": "^2.2.2",
+    "@next/font": "13.0.7",
+    "@types/node": "18.11.17",
+    "@types/react": "18.0.26",
     "@types/react-dom": "18.0.9",
-    "eslint": "8.28.0",
-    "eslint-config-next": "13.0.5",
-    "next": "13.0.5",
+    "eslint": "8.30.0",
+    "eslint-config-next": "13.0.7",
+    "next": "13.0.7",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "typescript": "4.9.3"
+    "typescript": "4.9.4"
   }
 }
