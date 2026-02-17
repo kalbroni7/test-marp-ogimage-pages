@@ -12,12 +12,12 @@
     "ogimage:devcontainer": "bash scripts/ogimage-devcontainer.sh"
   },
   "dependencies": {
-    "@marp-team/marp-cli": "^2.2.2",
+    "@marp-team/marp-cli": "^4.0.0",
     "@next/font": "13.0.7",
     "@types/node": "18.11.17",
     "@types/react": "18.0.26",
     "@types/react-dom": "18.0.9",
-    "eslint": "8.30.0",
+    "eslint": "10.0.0",
     "eslint-config-next": "13.0.7",
     "next": "13.0.7",
     "react": "18.2.0",
